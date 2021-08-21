@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <h1>Statistic</h1>
-    <Nav/>
-  </div>
-
+  <Layout>
+    Statistic
+  </Layout>
 </template>
 
 <script>
 
 import Nav from "../components/Nav"
+import Layout from "../components/Layout"
 export default  {
-  components: {Nav}
+  components: {Layout, Nav}
 }
 </script>
 

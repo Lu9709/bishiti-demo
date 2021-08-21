@@ -5,6 +5,11 @@
       <span class="weather-text">{{weather_text}}</span>
     </div>
     <img class="log_pic" :src="log_pic_url" alt=""/>
+    <Guide/>
+    <AsideTitle text="精选图片"/>
+    <ImgList/>
+    <AsideTitle text="精选阅读"/>
+    <ReadFrame/>
   </Layout>
 </template>
 
@@ -12,6 +17,10 @@
 
 import Nav from "../components/Nav"
 import Layout from "../components/Layout"
+import Guide from "../components/Guide"
+import AsideTitle from "../components/AsideTitle"
+import ReadFrame from "../components/ReadFrame"
+import ImgList from "../components/ImgList"
 export default {
   data() {
     return {
@@ -60,7 +69,7 @@ export default {
     }
 
   },
-  components: {Layout, Nav},
+  components: {ReadFrame, AsideTitle, Guide, Layout, Nav,ImgList},
   created: function () {
     //获取天气文本
     this.getWeatherText();
