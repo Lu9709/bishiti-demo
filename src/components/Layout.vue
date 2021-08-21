@@ -8,7 +8,7 @@
 
 </template>
 <script>
-import Nav from "./Nav"
+import Nav from "./Home/Nav"
 export default {
   name: "Layout",
   components:{Nav}

@@ -15,7 +15,7 @@
   </nav>
 </template>
 <script>
-import Icon from "./Icon"
+import Icon from "../Icon"
 
 export default {
   components: {Icon}

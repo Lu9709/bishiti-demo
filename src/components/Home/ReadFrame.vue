@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-import ReadItem from "./ReadItem"
+import ReadItem from "../ReadItem"
 export default {
   components: {ReadItem}
 }

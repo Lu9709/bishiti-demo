@@ -6,7 +6,7 @@
 
 <script>
 
-import Nav from "../components/Nav"
+import Nav from "../components/Home/Nav"
 import Layout from "../components/Layout"
 export default  {
   components: {Layout, Nav}
