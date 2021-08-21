@@ -27,44 +27,6 @@ export default {
       weather_icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_weather.png",
       weather_text: "",
       log_pic_url: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/log_pic.png?1=1",
-      //精刚导航栏数据
-      guide: [
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide1.png", txt: "换图"},
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide2.png", txt: "提醒"},
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide3.png", txt: "积分"},
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide4.png", txt: "成就"},
-      ],
-
-      //精选图片数据
-      bgImgList: ["https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img1.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img2.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img3.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img4.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img5.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img6.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img7.png"],
-
-      //精选阅读数据
-      readData: [
-        {
-          icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/read_pic1.png",
-          title: "好的界面设计并不始于图片，而是始于对人的理解",
-          date: "2021-06-12"
-        },
-        {
-          icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/read_pic2.png",
-          title: "将已知的事物陌生化，更是一种创造",
-          date: "2021-06-10"
-        },
-        {
-          icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/read_pic2.png",
-          title: "不要在你家里放一件你不知其用，或你认为不美的东西",
-          date: "2021-06-08"
-        },
-      ],
-
-      //底部导航栏数据
-      tabbar: [
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_tabbar1.png", txt: "早安"},
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_tabbar2.png", txt: "排名"},
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_tabbar3.png", txt: "统计"},
-        {icon: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_tabbar4.png", txt: "我的"},
-      ],
-
       //todo:html中需要的变量，请在此处定义
     }
 
