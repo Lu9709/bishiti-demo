@@ -1,23 +1,20 @@
 <template>
   <nav>
-    <router-link to="/" active-class="selected">
-      <Icon img-url="https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide1.png" text="换图"/>
-    </router-link>
-    <router-link to="/" active-class="selected">
-      <Icon img-url="https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide2.png" text="提醒"/>
-    </router-link>
-    <router-link to="/" active-class="selected">
-      <Icon img-url="https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide3.png" text="积分"/>
-    </router-link>
-    <router-link to="/" active-class="selected">
-      <Icon img-url="https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/icon_guide4.png" text="成就"/>
-    </router-link>
+    <div v-for="item in guide" >
+      <router-link to="/demo" active-class="selected">
+        <Icon :img-url="item.imgUrl" :text="item.text"/>
+      </router-link>
+    </div>
   </nav>
 </template>
 <script>
 import Icon from "../Icon"
+import {mapState} from "vuex"
 export default {
-  components: {Icon}
+  components: {Icon},
+  computed:{
+    ...mapState(['guide'])
+  }
 }
 </script>
 <style lang="less" scoped>

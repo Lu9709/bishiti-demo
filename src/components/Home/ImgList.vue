@@ -1,38 +1,37 @@
 <template>
   <div class="list-wrapper">
     <ul class="leftList">
-      <li class="list-item" v-for="item in leftList" :key="item">
+      <li class="list-item" v-for="item in LeftImgList" :key="item">
         <img :src="item" alt="">
       </li>
     </ul>
     <ul class="rightList">
       <Button type="add"><i class="iconfont icon-addPhoto" style="font-size: 20px"></i>自己传图</Button>
-      <li class="list-item" v-for="item in rightList" :key="item">
+      <li class="list-item" v-for="item in RightImgList" :key="item">
         <img :src="item" alt="">
       </li>
-      <Button type="more">更多美图</Button>
+      <Button type="more" @click.native="ToPhotoGallery">更多美图</Button>
     </ul>
 
   </div>
 </template>
 <script>
 import Button from "../Button"
-
+import {mapGetters} from "vuex"
 export default {
   components: {Button},
   data() {
-    return {
-      bgImgList: ["https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img1.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img2.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img3.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img4.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img5.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img6.png", "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/bg_img7.png"],
-    }
+    return {}
   },
   computed: {
-    leftList: function () {
-      return this.bgImgList.slice(0, Math.ceil(this.bgImgList.length / 2))
-    },
-    rightList: function () {
-      return this.bgImgList.slice(Math.ceil(this.bgImgList.length / 2))
-    }
+    ...mapGetters(['LeftImgList','RightImgList'])
   },
+  methods:{
+    ToPhotoGallery(){
+      console.log('click')
+      this.$router.push('/photo-gallery')
+    }
+  }
 }
 
 </script>

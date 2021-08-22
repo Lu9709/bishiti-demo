@@ -1,10 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from "@/views/Home"
-import Rank from "@/views/Rank"
-import Statistic from "@/views/Statistic"
-import About from "@/views/About"
-import Article from "@/components/Article"
 Vue.use(Router)
 
 export default new Router({
@@ -15,21 +10,27 @@ export default new Router({
     },
     {
       path:'/home',
-      component:Home
+      component:()=>import("@/views/Home")
     },
     {
       path: '/rank',
-      component: Rank
+      component: ()=>import("@/views/Rank")
     },
     {
       path: '/statistic',
-      component: Statistic
+      component: ()=>import("@/views/Statistic")
     },{
       path:'/about',
-      component:About
+      component:()=>import("@/views/About")
     },{
       path:'/article',
-      component:Article
+      component:()=>import("@/components/Article")
+    },{
+      path:'/demo',
+      component:()=>import("@/components/Guide/demo")
+    },{
+      path:'/photo-gallery',
+      component:()=>import("@/components/PhotoGallery")
     }
   ]
 })

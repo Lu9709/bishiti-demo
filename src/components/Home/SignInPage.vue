@@ -14,10 +14,6 @@ export default {
       //todo:html中需要的变量，请在此处定义
     }
   },
-
-  created() {
-
-  }
 }
 </script>
 <style lang="less" scoped>
