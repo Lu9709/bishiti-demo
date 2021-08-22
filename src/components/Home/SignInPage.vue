@@ -1,16 +1,22 @@
 <template>
   <div class="SignInPage-wrapper">
     <img class="log_pic" :src="log_pic_url" alt=""/>
-    <p>距离打卡结束倒计时 02:02:02</p>
+    <p>距离打卡结束倒计时 <CountDown/></p>
   </div>
 </template>
 <script>
+import CountDown from "../CountDown"
 export default {
+  components: {CountDown},
   data(){
     return {
       log_pic_url: "https://xunmi-fe-test.oss-cn-shanghai.aliyuncs.com/img/log_pic.png?1=1",
       //todo:html中需要的变量，请在此处定义
     }
+  },
+
+  created() {
+
   }
 }
 </script>
