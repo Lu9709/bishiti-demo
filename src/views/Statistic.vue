@@ -1,15 +1,14 @@
 <template>
   <Layout>
-    Statistic
+    <el-empty description="未完善"></el-empty>
   </Layout>
 </template>
 
 <script>
 
-import Nav from "../components/Home/Nav"
 import Layout from "../components/Layout"
 export default  {
-  components: {Layout, Nav}
+  components: {Layout}
 }
 </script>
 

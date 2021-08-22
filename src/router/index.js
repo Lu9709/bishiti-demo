@@ -4,6 +4,7 @@ import Home from "@/views/Home"
 import Rank from "@/views/Rank"
 import Statistic from "@/views/Statistic"
 import About from "@/views/About"
+import Article from "@/components/Article"
 Vue.use(Router)
 
 export default new Router({
@@ -26,6 +27,9 @@ export default new Router({
     },{
       path:'/about',
       component:About
+    },{
+      path:'/article',
+      component:Article
     }
   ]
 })

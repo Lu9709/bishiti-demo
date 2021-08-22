@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="item in allArticle">
-        <router-link to="/rank">
+        <router-link to="/article">
           <ReadItem :img-url="item.imgUrl" :text="item.text" :date="item.date"/>
         </router-link>
       </li>

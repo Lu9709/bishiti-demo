@@ -12,7 +12,6 @@
 
 <script>
 
-import Nav from "../components/Home/Nav"
 import Layout from "../components/Layout"
 import Guide from "../components/Home/Guide"
 import AsideTitle from "../components/Home/AsideTitle"
@@ -30,7 +29,6 @@ export default {
     AsideTitle,
     Guide,
     Layout,
-    Nav,
     ImgList,
     Weather
   },
