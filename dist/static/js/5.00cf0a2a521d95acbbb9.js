@@ -1,0 +1,2 @@
+webpackJsonp([5],{Ijp3:function(e,t){},vu9I:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={components:{Layout:n("Cl3J").a}},u={render:function(){var e=this.$createElement,t=this._self._c||e;return t("Layout",[t("el-empty",{attrs:{description:"未完善"}})],1)},staticRenderFns:[]};var o=n("VU/8")(r,u,!1,function(e){n("Ijp3")},null,null);t.default=o.exports}});
+//# sourceMappingURL=5.00cf0a2a521d95acbbb9.js.map

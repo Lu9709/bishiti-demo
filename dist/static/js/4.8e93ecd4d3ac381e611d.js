@@ -1,0 +1,2 @@
+webpackJsonp([4],{NQ8l:function(e,t){},OQQf:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var o={render:function(){var e=this.$createElement,t=this._self._c||e;return t("el-empty",[t("el-button",{attrs:{type:"primary"},on:{click:this.ToHome}},[this._v("返回")])],1)},staticRenderFns:[]};var r=n("VU/8")({methods:{ToHome:function(){this.$router.push("/home")}}},o,!1,function(e){n("NQ8l")},null,null);t.default=r.exports}});
+//# sourceMappingURL=4.8e93ecd4d3ac381e611d.js.map
